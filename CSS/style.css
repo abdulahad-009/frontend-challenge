@@ -247,17 +247,16 @@ nav {
 }
 
 /* Third Section  */
-.thrdsect,
-.fourthsect {
+.commonSect {
     display: flex;
     align-items: center;
     gap: 85px;
 }
 
-.thrdsect .first,
-.thrdsect .img,
-.fourthsect .left-img,
-.fourthsect .second {
+.commonSect .first,
+.commonSect .img,
+.commonSect .left-img,
+.commonSect .second {
     width: 48%;
 }
 
@@ -267,16 +266,16 @@ nav {
     align-items: center;
 }
 
-.thrdsect .first,
-.fourthsect .second {
+.commonSect .first,
+.commonSect .second {
     display: flex;
     flex-direction: column;
     gap: 35px;
     flex-wrap: wrap;
 }
 
-.thrdsect .first span,
-.fourthsect .second span,
+.commonSect .first span,
+.commonSect .second span,
 .testimonial-container span {
     font-family: var(--font-secondary);
     font-weight: 600;
@@ -302,8 +301,8 @@ nav {
     width: 15%;
 }
 
-.thrdsect .first h2,
-.fourthsect .second h2 {
+.commonSect .first h2,
+.commonSect .second h2 {
     font-family: var(--font-primary);
     font-weight: 700;
     font-style: Bold;
@@ -312,8 +311,8 @@ nav {
     color: #1E1E1E;
 }
 
-.thrdsect .first p,
-.fourthsect .second p {
+.commonSect .first p,
+.commonSect .second p {
     font-family: var(--font-secondary);
     font-weight: 500;
     font-style: Medium;
@@ -322,8 +321,8 @@ nav {
     color: #575757;
 }
 
-.thrdsect .img,
-.fourthsect .left-img {
+.commonSect .img,
+.commonSect .left-img {
     background: #E0F8F8;
     border-radius: 35px 4px 35px 4px;
     display: flex;
@@ -331,8 +330,8 @@ nav {
     align-items: center;
 }
 
-.thrdsect .img img,
-.fourthsect .left-img img {
+.commonSect .img img,
+.commonSect .left-img img {
     width: auto;
     height: 550px;
     object-fit: contain;
@@ -341,14 +340,12 @@ nav {
 .services,
 .servicesTwo {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
+    gap: 20px;
 }
 
-.servOne,
-.servTwo,
-.servThree,
-.servFour {
+.servOne {
     display: flex;
     align-items: center;
     gap: 22px;
@@ -362,26 +359,17 @@ nav {
 
 .servTwo .icon-img {
     background-color: #FFABAB;
-    padding: 10px;
-    border-radius: 4px;
 }
 
 .servThree .icon-img {
     background-color: #70F1EA;
-    padding: 10px;
-    border-radius: 4px;
 }
 
 .servFour .icon-img {
     background-color: #FFEE90;
-    padding: 10px;
-    border-radius: 4px;
 }
 
-.servOne img,
-.servTwo img,
-.servThree img,
-.servFour img {
+.servOne img {
     height: 24px;
     width: 24px;
     object-fit: contain;
@@ -408,15 +396,11 @@ nav {
     flex-wrap: wrap;
 }
 
-.testiFirst,
-.testiTwo,
-.testiThree {
+.testimonials .testiCard {
     width: 30%;
 }
 
-.testiFirst,
-.testiTwo,
-.testiThree {
+.testimonials .testiCard {
     border: 3px solid #D5DDDD;
     padding: 30px;
     border-radius: 35px 4px 35px 4px;
@@ -425,24 +409,18 @@ nav {
     gap: 30px;
 }
 
-.testiFirst:hover,
-.testiTwo:hover,
-.testiThree:hover {
-    border: none;
+.testimonials .testiCard:hover {
+    border: 3px solid #008080;
     background-color: #008080;
 }
 
-.testiFirst .top,
-.testiTwo .top,
-.testiThree .top {
+.testimonials .testiCard .top {
     display: flex;
     gap: 32px;
     align-items: center;
 }
 
-.testiFirst .top img,
-.testiTwo .top img,
-.testiThree .top img {
+.testimonials .testiCard .top img {
     width: 75px;
     height: 75px;
     border-radius: 50%;
@@ -486,29 +464,21 @@ nav {
 }
 
 /* Hovering Section  */
-.testiFirst:hover,
-.testiTwo:hover,
-.testiThree:hover {
+.testimonials .testiCard:hover {
     border: none;
     background-color: #008080;
     cursor: pointer;
 }
 
-.testiFirst:hover .name-desg .name,
-.testiTwo:hover .name-desg .name,
-.testiThree:hover .name-desg .name {
+.testimonials .testiCard:hover .name-desg .name {
     color: #FFFFFF;
 }
 
-.testiFirst:hover .name-desg .desg,
-.testiTwo:hover .name-desg .desg,
-.testiThree:hover .name-desg .desg {
+.testimonials .testiCard:hover .name-desg .desg {
     color: #E1E1E1;
 }
 
-.testiFirst:hover .content p,
-.testiTwo:hover .content p,
-.testiThree:hover .content p {
+.testimonials .testiCard:hover .content p {
     color: #FFFFFF;
 }
 
@@ -554,11 +524,11 @@ nav {
     border-radius: 50%;
 }
 
-.bg-1{
+.bg-1 {
     background: #FDE4E4 !important;
 }
 
-.bg-2{
+.bg-2 {
     background: #DAFCDF !important;
 }
 
@@ -843,18 +813,16 @@ footer {
         font-size: 36px;
     }
 
-    .services,
+    /* .services,
     .servicesTwo {
         justify-content: space-between;
-    }
+    } */
 
     .services-para {
         font-size: 16px !important;
     }
 
-    .testiFirst,
-    .testiTwo,
-    .testiThree {
+    .testimonials .testiCard {
         width: 48%;
     }
 
@@ -958,12 +926,12 @@ footer {
         font-size: 16px;
     }
 
-    .thrdsect .img img,
+    .commonSect .img img,
     .fourthsect .left-img img {
         height: 400px;
     }
 
-    .thrdsect .first,
+    .commonSect .first,
     .fourthsect .second {
         gap: 25px;
     }
@@ -981,12 +949,10 @@ footer {
 
     .services,
     .servicesTwo {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 
-    .testiFirst,
-    .testiTwo,
-    .testiThree {
+    .testimonials .testiCard {
         width: 48%;
     }
 
@@ -1133,22 +1099,19 @@ footer {
         gap: 40px;
     }
 
-    .thrdsect .first,
-    .thrdsect .img,
-    .fourthsect .left-img,
-    .fourthsect .second {
+    .commonSect .first,
+    .commonSect .img,
+    .commonSect .left-img,
+    .commonSect .second {
         width: 100%;
     }
 
-    .thrdsect,
-    .fourthsect {
+    .commonSect {
         gap: 85px;
         flex-direction: column;
     }
 
-    .testiFirst,
-    .testiTwo,
-    .testiThree {
+    .testimonials .testiCard {
         width: 47%;
     }
 
@@ -1222,18 +1185,17 @@ footer {
     }
 
 
-    .thrdsect,
-    .fourthsect {
+    .commonSect {
         display: flex;
         align-items: center;
         gap: 40px;
         flex-direction: column-reverse;
     }
 
-    .thrdsect .first,
-    .thrdsect .img,
-    .fourthsect .left-img,
-    .fourthsect .second {
+    .commonSect .first,
+    .commonSect .img,
+    .commonSect .left-img,
+    .commonSect .second {
         width: 100%;
     }
 
@@ -1250,9 +1212,7 @@ footer {
         gap: 20px;
     }
 
-    .testiFirst,
-    .testiTwo,
-    .testiThree {
+    .testimonials .testiCard {
         width: 100%;
     }
 
@@ -1300,9 +1260,7 @@ footer {
         object-fit: contain;
     }
 
-    .testiFirst .top img,
-    .testiTwo .top img,
-    .testiThree .top img {
+    .testimonials .testiCard .top img {
         width: 65px;
         height: 65px;
         border-radius: 50%;
@@ -1326,8 +1284,8 @@ footer {
         gap: 30px;
     }
 
-    .thrdsect .first h2,
-    .fourthsect .second h2 {
+    .commonSect .first h2,
+    .commonSect .second h2 {
         font-size: 38px;
     }
 
@@ -1409,13 +1367,13 @@ footer {
         justify-content: center;
     }
 
-    .thrdsect .img img,
-    .fourthsect .left-img img {
+    .commonSect .img img,
+    .commonSect .left-img img {
         max-height: 250px;
     }
 
-    .thrdsect .first h2,
-    .fourthsect .second h2 {
+    .commonSect .first h2,
+    .commonSect .second h2 {
         font-size: 28px;
     }
 
@@ -1432,9 +1390,7 @@ footer {
         font-size: 12px;
     }
 
-    .testiFirst .top,
-    .testiTwo .top,
-    .testiThree .top {
+    .testimonials .testiCard .top {
         gap: 12px;
     }
 
