@@ -9,6 +9,11 @@
 :root {
     --main-color: #008080;
     --secondary-color: #E0F8F8;
+    --heading-color: #2B2B2B;
+    --white-color: #FFFFFF;
+    ;
+    --paragraph-color: #575757;
+    --second-btn-color: #1E1E1E;
     --font-primary: "Inter", sans-serif;
     --font-secondary: "Poppins", sans-serif;
 }
@@ -20,7 +25,7 @@
     font-style: Bold;
     font-size: 48px;
     line-height: 119%;
-    color: #1E1E1E;
+    color: var(--second-btn-color);
 }
 
 .main-paragraph {
@@ -29,7 +34,7 @@
     font-style: Medium;
     font-size: 20px;
     line-height: 175%;
-    color: #575757;
+    color: var(--paragraph-color);
 }
 
 .common-button {
@@ -42,7 +47,7 @@
     font-style: normal;
     font-size: 22px;
     line-height: 147%;
-    color: #1E1E1E;
+    color: var(--second-btn-color);
     text-decoration: none;
 }
 
@@ -53,9 +58,9 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 147%;
-    color: #FFFFFF;
+    color: var(--white-color);
     box-shadow: 0px 15px 26px 0px #00000008;
-    background-color: #008080;
+    background-color: var(--main-color);
     text-decoration: none;
 }
 
@@ -76,7 +81,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 20;
-    background: #FFFFFF;
+    background: var(--white-color);
     padding: 30px 120px 30px 120px;
 }
 
@@ -101,7 +106,7 @@ nav {
 .hamburger span {
     width: 26px;
     height: 3px;
-    background: #2B2B2B;
+    background: var(--heading-color);
 }
 
 .nav-items ul {
@@ -118,7 +123,7 @@ nav {
     font-weight: 600;
     font-size: 20px;
     line-height: 147%;
-    color: #2B2B2B;
+    color: var(--heading-color);
     text-decoration: none;
 }
 
@@ -134,7 +139,7 @@ nav {
     font-weight: 600;
     font-size: 20px;
     line-height: 147%;
-    color: #008080;
+    color: var(--main-color);
     text-decoration: none;
 }
 
@@ -167,11 +172,11 @@ nav {
     font-size: 86px;
     line-height: 114%;
     letter-spacing: 0%;
-    color: #2B2B2B;
+    color: var(--heading-color);
 }
 
 .banner-first-section span {
-    color: #008080;
+    color: var(--main-color);
 }
 
 .banner-first-section p {
@@ -179,13 +184,13 @@ nav {
     font-weight: 500;
     font-size: 24px;
     line-height: 171%;
-    color: #575757;
+    color: var(--paragraph-color);
     text-transform: lowercase;
 }
 
 .p-span {
     text-transform: capitalize;
-    color: #575757 !important;
+    color: var(--paragraph-color) !important;
 }
 
 #banner-form {
@@ -247,16 +252,16 @@ nav {
 }
 
 /* Third Section  */
-.commonSect {
+.common-sect {
     display: flex;
     align-items: center;
     gap: 85px;
 }
 
-.commonSect .first,
-.commonSect .img,
-.commonSect .left-img,
-.commonSect .second {
+.common-sect .first,
+.common-sect .img,
+.common-sect .left-img,
+.common-sect .second {
     width: 48%;
 }
 
@@ -266,16 +271,16 @@ nav {
     align-items: center;
 }
 
-.commonSect .first,
-.commonSect .second {
+.common-sect .first,
+.common-sect .second {
     display: flex;
     flex-direction: column;
     gap: 35px;
     flex-wrap: wrap;
 }
 
-.commonSect .first span,
-.commonSect .second span,
+.common-sect .first span,
+.common-sect .second span,
 .testimonial-container span {
     font-family: var(--font-secondary);
     font-weight: 600;
@@ -283,7 +288,7 @@ nav {
     line-height: 100%;
     letter-spacing: 0%;
     text-transform: uppercase;
-    color: #008080;
+    color: var(--main-color);
     background-color: #20CFC614;
     border-radius: 4px;
     padding: 8px;
@@ -291,7 +296,7 @@ nav {
 
 .line {
     height: 2px;
-    background-color: #008080;
+    background-color: var(--main-color);
     width: 15%;
 }
 
@@ -301,28 +306,28 @@ nav {
     width: 15%;
 }
 
-.commonSect .first h2,
-.commonSect .second h2 {
+.common-sect .first h2,
+.common-sect .second h2 {
     font-family: var(--font-primary);
     font-weight: 700;
     font-style: Bold;
     font-size: 48px;
     line-height: 128%;
-    color: #1E1E1E;
+    color: var(--second-btn-color);
 }
 
-.commonSect .first p,
-.commonSect .second p {
+.common-sect .first p,
+.common-sect .second p {
     font-family: var(--font-secondary);
     font-weight: 500;
     font-style: Medium;
     font-size: 20px;
     line-height: 175%;
-    color: #575757;
+    color: var(--paragraph-color);
 }
 
-.commonSect .img,
-.commonSect .left-img {
+.common-sect .img,
+.common-sect .left-img {
     background: #E0F8F8;
     border-radius: 35px 4px 35px 4px;
     display: flex;
@@ -330,8 +335,8 @@ nav {
     align-items: center;
 }
 
-.commonSect .img img,
-.commonSect .left-img img {
+.common-sect .img img,
+.common-sect .left-img img {
     width: auto;
     height: 550px;
     object-fit: contain;
@@ -345,31 +350,32 @@ nav {
     gap: 20px;
 }
 
-.servOne {
+.serv-one {
     display: flex;
     align-items: center;
     gap: 22px;
+    flex: 0 0 calc(50% - 10px);
 }
 
-.servOne .icon-img {
+.serv-one .icon-img {
     background-color: #CAFFD2;
     padding: 10px;
     border-radius: 4px;
 }
 
-.servTwo .icon-img {
+.serv-two .icon-img {
     background-color: #FFABAB;
 }
 
-.servThree .icon-img {
+.serv-three .icon-img {
     background-color: #70F1EA;
 }
 
-.servFour .icon-img {
+.serv-four .icon-img {
     background-color: #FFEE90;
 }
 
-.servOne img {
+.serv-one img {
     height: 24px;
     width: 24px;
     object-fit: contain;
@@ -378,7 +384,7 @@ nav {
 .services-para {
     font-family: var(--font-primary);
     font-weight: 600;
-    font-size: 24px !important;
+    font-size: 22px !important;
     line-height: 128%;
     color: #323232;
 }
@@ -396,11 +402,11 @@ nav {
     flex-wrap: wrap;
 }
 
-.testimonials .testiCard {
+.testimonials .testi-card {
     width: 30%;
 }
 
-.testimonials .testiCard {
+.testimonials .testi-card {
     border: 3px solid #D5DDDD;
     padding: 30px;
     border-radius: 35px 4px 35px 4px;
@@ -409,18 +415,24 @@ nav {
     gap: 30px;
 }
 
-.testimonials .testiCard:hover {
-    border: 3px solid #008080;
-    background-color: #008080;
+.testimonials .testi-card:hover {
+    border: 3px solid var(--main-color);
+    background-color: var(--main-color);
 }
 
-.testimonials .testiCard .top {
+.testimonials .testi-card .top {
     display: flex;
     gap: 32px;
     align-items: center;
 }
 
-.testimonials .testiCard .top img {
+.testimonials .testi-card .top img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.testimonials .testi-card:hover .top img {
     width: 75px;
     height: 75px;
     border-radius: 50%;
@@ -432,7 +444,7 @@ nav {
     font-style: Bold;
     font-size: 24px;
     line-height: 128%;
-    color: #1E1E1E;
+    color: var(--second-btn-color);
 }
 
 .name-desg .desg {
@@ -450,36 +462,42 @@ nav {
     font-style: Medium;
     font-size: 20px;
     line-height: 181%;
-    color: #575757;
+    color: var(--paragraph-color);
 }
 
 .icon {
     position: relative;
 }
 
-.icon img {
+.icon i {
     position: absolute;
     right: 20px;
-    bottom: 0px;
+    bottom: -25px;
+    font-size: 55px;
+    color: var(--main-color);
 }
 
 /* Hovering Section  */
-.testimonials .testiCard:hover {
-    border: none;
-    background-color: #008080;
+.testimonials .testi-card:hover {
+    border: 3px solid var(--main-color);
+    background-color: var(--main-color);
     cursor: pointer;
 }
 
-.testimonials .testiCard:hover .name-desg .name {
-    color: #FFFFFF;
+.testimonials .testi-card:hover .name-desg .name {
+    color: var(--white-color);
 }
 
-.testimonials .testiCard:hover .name-desg .desg {
+.testimonials .testi-card:hover .name-desg .desg {
     color: #E1E1E1;
 }
 
-.testimonials .testiCard:hover .content p {
-    color: #FFFFFF;
+.testimonials .testi-card:hover .content p {
+    color: var(--white-color);
+}
+
+.testimonials .testi-card:hover .icon i {
+    color: #EEEEEE;
 }
 
 /* Sixth Section  */
@@ -496,26 +514,22 @@ nav {
     font-style: Bold;
     font-size: 40px;
     line-height: 128%;
-    color: #1E1E1E;
+    color: var(--second-btn-color);
 }
 
-.valueCards {
+.value-cards {
     display: flex;
     justify-content: space-between;
 }
 
-.cardOne,
-.cardTwo,
-.cardThree {
+.card-one {
     display: flex;
     flex-direction: column;
     gap: 22px;
     width: 30%;
 }
 
-.cardOne .image img,
-.cardTwo .image img,
-.cardThree .image img {
+.card-one .image img {
     height: 50px;
     width: 50px;
     object-fit: contain;
@@ -532,26 +546,22 @@ nav {
     background: #DAFCDF !important;
 }
 
-.cardOne h3,
-.cardTwo h3,
-.cardThree h3 {
+.card-one h3 {
     font-family: var(--font-primary);
     font-weight: 700;
     font-style: Bold;
     font-size: 28px;
     line-height: 128%;
-    color: #1E1E1E;
+    color: var(--second-btn-color);
 }
 
-.cardOne p,
-.cardTwo p,
-.cardThree p {
+.card-one p {
     font-family: var(--font-secondary);
     font-weight: 500;
     font-style: Medium;
     font-size: 20px;
     line-height: 175%;
-    color: #575757;
+    color: var(--paragraph-color);
 }
 
 .read-more {
@@ -560,49 +570,58 @@ nav {
     font-style: Medium;
     font-size: 22px;
     line-height: 128%;
-    color: #008080;
+    color: var(--main-color);
     text-decoration: none;
 }
 
 /* Contact Section  */
 .form {
     display: flex;
-    background: #008080;
+    background: var(--main-color);
     border-radius: 35px 8px 35px 8px;
     padding: 70px;
     align-items: center;
 }
 
-.formOne {
+.form-one {
     display: flex;
     flex-direction: column;
     gap: 65px;
 }
 
-.formOne,
-.formTwo {
+.form-one,
+.form-two {
     width: 45%;
 }
 
-.formOne h2 {
+.form-one h2 {
     font-family: var(--font-primary);
     font-weight: 700;
     font-style: Bold;
     font-size: 48px;
     line-height: 128%;
-    color: #FFFFFF;
+    color: var(--white-color);
+}
+
+.contact-form {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .contact-form #contact {
-    height: 40px;
+    height: 44px;
     font-family: var(--font-secondary);
     font-weight: 600;
     font-size: 20px;
     line-height: 147%;
     color: #7E7E7E;
+    outline: none;
+    padding-left: 10px;
 }
 
-.formOne p {
+.form-one p {
     font-family: var(--font-secondary);
     font-weight: 500;
     font-style: Medium;
@@ -611,7 +630,7 @@ nav {
     color: #D3D3D3;
 }
 
-.formOne span a {
+.form-one span a {
     font-family: var(--font-secondary);
     font-weight: 500;
     font-style: Medium;
@@ -622,7 +641,7 @@ nav {
     text-transform: capitalize;
 }
 
-.form .formOne span {
+.form .form-one span {
     font-family: var(--font-secondary);
     font-weight: 600;
     font-size: 18px;
@@ -641,7 +660,7 @@ nav {
 
 /* Footer  */
 footer {
-    background-color: #008080;
+    background-color: var(--main-color);
     padding: 90px 120px 90px 120px;
 }
 
@@ -651,11 +670,11 @@ footer {
     margin-bottom: 70px;
 }
 
-.footerOne {
+.footer-one {
     width: 35%;
 }
 
-.footerOne p {
+.footer-one p {
     font-family: var(--font-secondary);
     font-weight: 500;
     font-style: Medium;
@@ -671,33 +690,27 @@ footer {
     font-style: Bold;
     font-size: 26px;
     line-height: 128%;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
-.footerTwo ul,
-.footerThree ul,
-.footerFour ul {
+.footer-two ul {
     display: flex;
     flex-direction: column;
     gap: 38px;
     margin-top: 38px;
 }
 
-.footerTwo ul li,
-.footerThree ul li,
-.footerFour ul li {
+.footer-two ul li {
     list-style-type: none;
 }
 
-.footerTwo ul li a,
-.footerThree ul li a,
-.footerFour ul li a {
+.footer-two ul li a {
     font-family: var(--font-primary);
     font-weight: 500;
     font-style: Medium;
     font-size: 22px;
     line-height: 128%;
-    color: #FFFFFF;
+    color: var(--white-color);
     text-decoration: none;
 }
 
@@ -730,7 +743,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-top: 24px;
-    border-top: 2px solid #FFFFFF;
+    border-top: 2px solid var(--white-color);
 }
 
 .facebook img,
@@ -750,7 +763,7 @@ footer {
     font-size: 18px;
     line-height: 100%;
     letter-spacing: 0%;
-    color: #FFFFFF;
+    color: var(--white-color);
     text-decoration: none;
 }
 
@@ -822,7 +835,7 @@ footer {
         font-size: 16px !important;
     }
 
-    .testimonials .testiCard {
+    .testimonials .testi-card {
         width: 48%;
     }
 
@@ -830,13 +843,11 @@ footer {
         gap: 30px;
     }
 
-    .cardOne,
-    .cardTwo,
-    .cardThree {
+    .card-one {
         width: 48%;
     }
 
-    .valueCards {
+    .value-cards {
         flex-wrap: wrap;
         gap: 35px;
     }
@@ -845,35 +856,35 @@ footer {
         padding: 30px;
     }
 
-    .formOne h2 {
+    .form-one h2 {
         font-size: 38px;
     }
 
-    .formTwo img {
+    .form-two img {
         width: 100%;
         height: 100%;
         object-fit: contain;
     }
 
-    .formOne {
+    .form-one {
         gap: 25px;
     }
 
-    .formOne p {
+    .form-one p {
         font-size: 16px;
     }
 
-    .formOne span a {
+    .form-one span a {
         font-size: 16px !important;
     }
 
     .contact-form {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 4px;
     }
 
-    .footerOne {
+    .footer-one {
         width: auto;
     }
 
@@ -926,12 +937,12 @@ footer {
         font-size: 16px;
     }
 
-    .commonSect .img img,
+    .common-sect .img img,
     .fourthsect .left-img img {
         height: 400px;
     }
 
-    .commonSect .first,
+    .common-sect .first,
     .fourthsect .second {
         gap: 25px;
     }
@@ -940,11 +951,12 @@ footer {
         font-size: 16px !important;
     }
 
-    .servOne,
+    .serv-one,
     .servTwo,
     .servThree,
     .servFour {
         gap: 12px;
+        flex: none;
     }
 
     .services,
@@ -952,7 +964,7 @@ footer {
         flex-wrap: wrap;
     }
 
-    .testimonials .testiCard {
+    .testimonials .testi-card {
         width: 48%;
     }
 
@@ -960,19 +972,17 @@ footer {
         gap: 30px;
     }
 
-    .cardOne,
-    .cardTwo,
-    .cardThree {
+    .card-one {
         width: 100%;
     }
 
-    .valueCards {
+    .value-cards {
         flex-wrap: wrap;
         gap: 40px;
     }
 
-    .formOne,
-    .formTwo {
+    .form-one,
+    .form-two {
         width: 100%;
     }
 
@@ -981,7 +991,7 @@ footer {
         gap: 40px;
     }
 
-    .footerOne {
+    .footer-one {
         width: auto;
     }
 
@@ -1011,13 +1021,13 @@ footer {
     .hamburger span {
         width: 26px;
         height: 3px;
-        background: #2B2B2B;
+        background: var(--heading-color);
     }
 
     .nav-items {
         position: fixed;
         inset: 0;
-        background: #ffffff;
+        background: var(--white-color);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1046,7 +1056,7 @@ footer {
     .nav-items ul li a {
         font-size: 22px;
         font-weight: 600;
-        color: #2B2B2B;
+        color: var(--heading-color);
         text-decoration: none;
     }
 
@@ -1061,7 +1071,7 @@ footer {
     .mobile-btns .sign-in {
         font-family: var(--font-primary);
         font-size: 20px;
-        color: #008080;
+        color: var(--main-color);
         font-weight: 600;
         text-decoration: none;
     }
@@ -1069,7 +1079,7 @@ footer {
     .mobile-btns .secondary-button {
         font-size: 18px;
         padding: 14px 32px;
-        background: #008080;
+        background: var(--main-color);
         color: #fff;
         border-radius: 8px;
         text-decoration: none;
@@ -1099,19 +1109,19 @@ footer {
         gap: 40px;
     }
 
-    .commonSect .first,
-    .commonSect .img,
-    .commonSect .left-img,
-    .commonSect .second {
+    .common-sect .first,
+    .common-sect .img,
+    .common-sect .left-img,
+    .common-sect .second {
         width: 100%;
     }
 
-    .commonSect {
+    .common-sect {
         gap: 85px;
         flex-direction: column;
     }
 
-    .testimonials .testiCard {
+    .testimonials .testi-card {
         width: 47%;
     }
 
@@ -1123,13 +1133,11 @@ footer {
         font-size: 38px;
     }
 
-    .cardOne,
-    .cardTwo,
-    .cardThree {
+    .card-one {
         width: 100%;
     }
 
-    .valueCards {
+    .value-cards {
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -1139,8 +1147,8 @@ footer {
         padding: 30px;
     }
 
-    .formOne,
-    .formTwo {
+    .form-one,
+    .form-two {
         width: 100%;
     }
 
@@ -1155,7 +1163,7 @@ footer {
         gap: 60px;
     }
 
-    .footerOne {
+    .footer-one {
         width: 100%;
     }
 
@@ -1185,23 +1193,24 @@ footer {
     }
 
 
-    .commonSect {
+    .common-sect {
         display: flex;
         align-items: center;
         gap: 40px;
         flex-direction: column-reverse;
     }
 
-    .commonSect .first,
-    .commonSect .img,
-    .commonSect .left-img,
-    .commonSect .second {
+    .common-sect .first,
+    .common-sect .img,
+    .common-sect .left-img,
+    .common-sect .second {
         width: 100%;
     }
 
     .services,
     .servicesTwo {
         gap: 16px;
+        flex: 0 0 calc(50% - 10px);
     }
 
     .testimonial-container {
@@ -1212,17 +1221,15 @@ footer {
         gap: 20px;
     }
 
-    .testimonials .testiCard {
+    .testimonials .testi-card {
         width: 100%;
     }
 
-    .cardOne,
-    .cardTwo,
-    .cardThree {
+    .card-one {
         width: 100%;
     }
 
-    .valueCards {
+    .value-cards {
         flex-direction: column;
         gap: 50px;
     }
@@ -1240,7 +1247,7 @@ footer {
         flex-wrap: wrap;
     }
 
-    .footerOne {
+    .footer-one {
         width: 100%;
     }
 
@@ -1248,8 +1255,8 @@ footer {
         padding: 50px 40px 50px 40px;
     }
 
-    .formOne,
-    .formTwo {
+    .form-one,
+    .form-two {
         width: 100%;
     }
 
@@ -1260,13 +1267,13 @@ footer {
         object-fit: contain;
     }
 
-    .testimonials .testiCard .top img {
+    .testimonials .testi-card .top img {
         width: 65px;
         height: 65px;
         border-radius: 50%;
     }
 
-    .formTwo img {
+    .form-two img {
         width: auto;
         max-height: 230px;
         object-fit: contain;
@@ -1284,9 +1291,16 @@ footer {
         gap: 30px;
     }
 
-    .commonSect .first h2,
-    .commonSect .second h2 {
+    .common-sect .first h2,
+    .common-sect .second h2 {
         font-size: 38px;
+    }
+
+    .common-sect .img img,
+    .common-sect .left-img img {
+        width: auto;
+        height: 360px;
+        object-fit: contain;
     }
 
     .main-heading {
@@ -1298,17 +1312,17 @@ footer {
         line-height: 120%;
     }
 
-    .formOne h2 {
+    .form-one h2 {
         font-size: 38px;
     }
 
     .contact-form {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 6px;
     }
 
-    .formOne {
+    .form-one {
         gap: 24px;
     }
 
@@ -1326,7 +1340,7 @@ footer {
         gap: 60px;
     }
 
-    .footerTwo ul,
+    .footer-two ul,
     .footerThree ul,
     .footerFour ul {
         gap: 16px;
@@ -1336,6 +1350,12 @@ footer {
     .footer-bottom {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .mail {
+        position: relative;
+        bottom: 7px;
+        left: 25px;
     }
 }
 
@@ -1367,13 +1387,13 @@ footer {
         justify-content: center;
     }
 
-    .commonSect .img img,
-    .commonSect .left-img img {
+    .common-sect .img img,
+    .common-sect .left-img img {
         max-height: 250px;
     }
 
-    .commonSect .first h2,
-    .commonSect .second h2 {
+    .common-sect .first h2,
+    .common-sect .second h2 {
         font-size: 28px;
     }
 
@@ -1390,7 +1410,7 @@ footer {
         font-size: 12px;
     }
 
-    .testimonials .testiCard .top {
+    .testimonials .testi-card .top {
         gap: 12px;
     }
 
@@ -1407,11 +1427,11 @@ footer {
         font-size: 28px;
     }
 
-    .formOne h2 {
+    .form-one h2 {
         font-size: 28px;
     }
 
-    .formTwo img {
+    .form-two img {
         max-height: 150px;
     }
 
@@ -1422,6 +1442,10 @@ footer {
 
     #submit-btn {
         margin-left: 0px;
+    }
+
+    .contact-form #contact {
+        width: 100%;
     }
 
 }
